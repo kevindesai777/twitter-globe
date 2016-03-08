@@ -20,7 +20,7 @@ app.get('/', function(req, res){
 app.use(express.static('public'));
 
 // Run on port 3000.
-http.listen(9194, function() {
+http.listen(process.env.PORT || 9194, function() {
   console.log('listening on 9194');
 });
 
